@@ -44,12 +44,8 @@ making it a block elements counter act the absolute positioning */
     width: 100%;
     position: absolute; /* layers the pictures on top of each other. */
     opacity: 0;
-    -webkit-animation-name: slideshow-fade;
-    -webkit-animation-duration: 30s;
-    -webkit-animation-iteration-count: infinite;
-    animation-name: slideshow-fade;
-    animation-duration: 25s;
-    animation-iteration-count: infinite;
+    -webkit-animation: slideshow-fade 25s infinite;
+    animation: slideshow-fade 25s infinite;
     z-index: 1000;
 
 }

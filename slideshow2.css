@@ -1,0 +1,42 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* keep the width mobile friendly no side scrolling  */
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.slideshow {
+    position: relative;
+    width: 500%;
+    height: 100vh;
+    overflow: hidden;
+    animation: slider 30s infinite;
+    transition: 20s;
+}
+
+.slideshow-img {
+    /* position: relative; */
+    width: 20%;
+    float: left;
+}
+
+@keyframes slider {
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: -400%
+    }
+
+    to {
+        left: 0%
+    }
+
+}
