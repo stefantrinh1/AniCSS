@@ -1,0 +1,66 @@
+.box{
+    border: 2px solid red;
+    background: red;
+    width: 100px;
+    height: 100px;
+}
+
+html{
+    background: grey;
+    padding: 5%;
+}
+
+.sm-expand:hover{
+    
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.7s 0.1s;
+    transition: all 0.7s 0.1s;
+}
+
+.md-expand:hover{
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    -webkit-transition: all 0.7s 0.1s;
+    transition: all 0.7s 0.1s;
+}
+
+.lg-expand:hover{
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;;
+}
+
+.sm-rotate:hover{
+    -webkit-transform: rotate(1080deg) scale(1.4);
+            transform: rotate(1080deg) scale(1.4);
+    -webkit-transition: all 2s ease-in;
+    transition: all 2s ease-in;
+    background-color: yellow;
+}
+.sm-rotate{
+    /* transform: rotate(1080deg);
+    transition: all 3s; */
+    -webkit-transition: all 2s ease-out;
+    transition: all 2s ease-out;
+    
+}
+
+@-webkit-keyframes change{
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+@keyframes change{
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+.colorchange:hover{
+    background-color: red;
+    -webkit-animation-name: change;
+            animation-name: change;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}

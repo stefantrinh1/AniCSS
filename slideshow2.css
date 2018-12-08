@@ -2,7 +2,8 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* keep the width mobile friendly no side scrolling  */
@@ -16,7 +17,9 @@ body {
     width: 500%;
     height: 100vh;
     overflow: hidden;
-    animation: slider 30s infinite;
+    -webkit-animation: slider 30s infinite;
+            animation: slider 30s infinite;
+    -webkit-transition: 20s;
     transition: 20s;
 }
 
@@ -24,6 +27,21 @@ body {
     /* position: relative; */
     width: 20%;
     float: left;
+}
+
+@-webkit-keyframes slider {
+    from {
+        left: 0;
+    }
+
+    50% {
+        left: -400%
+    }
+
+    to {
+        left: 0%
+    }
+
 }
 
 @keyframes slider {

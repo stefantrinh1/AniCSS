@@ -2,7 +2,8 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 /* keep the width mobile friendly no side scrolling  */
@@ -39,7 +40,8 @@ making it a block elements counter act the absolute positioning */
     left: 0;
     top: 0;
     overflow: hidden;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 75%;
     width: 100%;
     position: absolute; /* layers the pictures on top of each other. */
