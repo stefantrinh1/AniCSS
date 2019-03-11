@@ -6,52 +6,393 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AniCSS</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="anicss.css" />
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome To AniCSS</h1>
+    <div>
+        <div class="text-center">
+            <h1 class="green-text mb-0 font-xxxxlarge">AniCSS</h1>
+            <p class="font-medium my-0">Let Us CSS For You</p>
+        </div>
+        <hr>
 
-        <a href="slideshow.html">slideshow 1 Example</a>
-        <a href="slideshow2.html">slideshow 2 example</a>
+        <p class="font-large text-center">There are two kinds of people in HTML and CSS, thoose who like a clean mark
+            up and heavy CSS and thoose who like minimal CSS and heavy markup. There is no wrong or right way. Just do
+            it your way. AniCSS lies in the heavy markup, AniCSS is great for prototyping, small apps and quick
+            production websites. </p>
 
-        <h4 class="sm-expand">A Simple CSS Animation Library</h4>
+        <section name="benefits" class="green-bg b-radius-small">
+            <br>
+            <h3 class="white-text font-xlarge text-center mt-1">Benefits</h3>
+            <div class="flex flex-center flex-wrap text-center">
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-red">
+                    <p class="my-1">Quick Prototyping</p>
+                </div>
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-blue">
+                    <p class="my-1">One CSS File</p>
+                </div>
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-lightgrey">
+                    <p class="my-1">Generic Use</p>
+                </div>
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-yellow">
+                    <p class="my-1">Easy To Learn</p>
+                </div>
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-cream">
+                    <p class="my-1">Component Based CSS</p>
+                </div>
+                <div class="inline-block white-bg m-1 p-1 b-radius-xxlarge bg-alter-beige">
+                    <p class="my-1">Flexible and Adjustable</p>
+                </div>
 
-        <h6 class="text sm-expand">Animate</h6>
+            </div>
+
+        </section>
         <br>
-        <div class="box sm-expand">Animate 1</div>
+        <br>
+        <section name="Animations text-center">
+            <hr>
+            <h2 class="text sm-expand green-text">
+                Animatations
+            </h2>
+            <hr>
 
-    </div>
-    <br>
+            <h3 class="red-text text-center underline">Transform</h3>
 
-    <br><br>
+            <div class="text-center">
+                <div class="box sm-expand inline-block text-center m-2">
+                    <p class="vam">Expand (Small)</p>
+                </div>
 
-    <div class="box md-expand">Animate 2</div>
+                <div class="box md-expand inline-block text-center m-2">
+                    <p class="vam">Expand (Medium)</p>
+                </div>
 
-    </div>
+                <div class="box lg-expand inline-block text-center m-2">
+                    <p class="vam">Expand (Large)</p>
+                </div>
 
-    <br><br>
+                <div class="box rotate-1 inline-block text-center m-2">
+                    <p class="vam">Rotate Style 1</p>
+                </div>
 
-    <div class="box lg-expand">Animate 3</div>
+                <div class="box rotate-2 inline-block text-center m-2">
+                    <p class="vam">Rotate Style 2</p>
+                </div>
 
-    </div>
-    <br><br><br>
+                <div class="box rotate-3 inline-block text-center m-2">
+                    <p class="vam">Rotate 3</p>
+                </div>
+            </div>
+            <br>
+            <br>
 
-    <div class="box sm-rotate md-expand colorchange">Rotate 1</div>
+            <h3 class="text-center red-text underline">Slideshows</h3>
 
-    </div>
+            <p>The slide slides are more complicated and require knowledge of containers. </p>
 
-    <br>
+            <br>
+            <div>
+                <div class="w-49 relative inline-block vat m-0">
+                    <div class="slide-container"></div>
+                    <div class="slide-overlay"></div>
+                    <div class="slideshow">
+                        <img class="slideshow-img" src="https://www.gettyimages.co.uk/gi-resources/images/500px/983794168.jpg"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/497934/pexels-photo-497934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1111304/pexels-photo-1111304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </div>
+                </div>
 
-    <div class="box colorchange">Rotate 2</div>
+                <div class="w-49 relative overflow-hidden inline-block vat m-0">
+                    <div class="slideshow2">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1037993/pexels-photo-1037993.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                        <img class="slideshow-img" src="https://images.pexels.com/photos/255377/pexels-photo-255377.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                            alt="">
+                    </div>
+                </div>
+            </div>
 
-    </div>
-    <br>
-    <div class="box ">Rotate 3</div>
 
-    </div>
+        </section>
 
+        <hr>
+        <h2 class="green-text">STYLING</h2>
+        <hr>
+
+        <section name="Font-Styles">
+
+            <h4>Below are font colours available:</h4>
+            <p>The colours can be adjusted to your needs, however the default colours are kept a contemporary and easy
+                on the eye colours</p>
+
+            <span class="black-text">black-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="black-text"&gt;black-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="white-text black-bg">white-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="white-text black-bg"&gt;white-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="red-text">red-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="red-text"&gt;red-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="blue-text">blue-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="blue-text"&gt;blue-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="green-text">green-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="green-text"&gt;green-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="yellow-text">yellow-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="yellow-text"&gt;yellow-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="light-grey-text black-bg">light-grey-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="light-grey-text
+                black-bg"&gt;light-grey-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="dark-grey-text">dark-grey-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="dark-grey-text"&gt;dark-grey-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="cream-text black-bg">cream-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="cream-text black-bg"&gt;cream-text&lt;/span&gt;</span>
+            <br>
+            <br>
+            <span class="beige-text black-bg">beige-text</span>
+            <span class="ml-2 mb-5 beige-text pb-4">&lt;span class="beige-text black-bg"&gt;beige-text&lt;/span&gt;</span>
+            <br>
+            <br>
+
+        </section>
+        <hr>
+        <h2 class="green-text">LAYOUT</h2>
+        <hr>
+        <section>
+
+            <h3 class="red-text underline">Display Control</h3>
+
+        </section>
+
+        <hr>
+        <section>
+            <h3 class="red-text underline">Height and Width Control</h3>
+
+            <div class="float-right">
+                <ul>
+                    <li>w = Width</li>
+                    <li>h = Height</li>
+                    <li>100 = 100%</li>
+                    <li>50 = 50%</li>
+                </ul>
+            </div>
+            <p> Adding width and Height is done in percetages when using our classes.</p>
+            <p>when working with <b><u>WIDTH</u></b> we offer (10%, 15%, 20%, 25%, 33%, 49%, 50%, 66%, 75%, 100%).</p>
+            <p>when working with <b><u>HEIGHT</u></b> we offer (25%, 33%, 50%, 66%, 75%, 100%).</p>
+            <h4>Example:</h4>
+
+            <div class="inline-block mr-5 bold">
+                <ul>
+                    <li> Width 100% = w-100</li>
+                </ul>
+            </div>
+
+            <div class="inline-block beige-text">
+                &lt;div class="w-100"&gt;Width 100&lt;/div&gt;
+
+            </div>
+
+
+        </section>
+        <hr>
+        <section name="Margin and Padding">
+            <h3 class="red-text underline">Margin and Padding</h3>
+
+            <div class="float-right">
+
+                <div class="block">
+
+                    <ul class="inline-block">
+                        <li>m = margin</li>
+                        <li>p = padding</li>
+                        <li>l = left</li>
+                        <li>r = right</li>
+                        <li>t = top</li>
+                        <li>b = bottom</li>
+                        <li>x = horizontal</li>
+                        <li>y = vertical</li>
+                    </ul>
+
+                    <ul class="inline-block vat">
+                        <li>1 = 10px</li>
+                        <li>2 = 20px</li>
+                        <li>3 = 30px</li>
+                        <li>4 = 40px</li>
+                        <li>5 = 50px</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="mt-4 red-text">Margin</h2>
+
+            <p class="m-0">Example:</p>
+            <div class="inline-block mr-5 bold">
+                <ul>
+                    <li>Margin Left</li>
+                    <li>Margin Right</li>
+                    <li>Margin Top</li>
+                    <li>Margin Bottom</li>
+                    <li>Margin Top and Bottom</li>
+                    <li>Margin Left and Right</li>
+                </ul>
+            </div>
+
+            <div class="inline-block beige-text">
+                <ul>
+                    <li>&lt;p class="ml-1"&gt;Margin Left&lt;/p&gt;</li>
+                    <li>&lt;p class="mr-1"&gt;Margin Right&lt;/p&gt;</li>
+                    <li>&lt;p class="mt-1"&gt;Margin Top&lt;/p&gt;</li>
+                    <li>&lt;p class="mb-1"&gt;Margin Bottom&lt;/p&gt;</li>
+                    <li>&lt;p class="my-1"&gt;Margin Top and Bottom&lt;/p&gt;</li>
+                    <li>&lt;p class="mx-1"&gt;Margin Left and Right&lt;/p&gt;</li>
+                </ul>
+            </div>
+
+            <h4 class="green-text underline">Margin Sizes</h4>
+
+            <p class="m-0">Example:</p>
+            <div class="inline-block mr-5 bold mr-5">
+                <ul>
+                    <li>Margin with 10px</li>
+                    <li>Margin with 20px</li>
+                    <li>Margin with 30px</li>
+                    <li>Margin with 40px</li>
+                    <li>Margin with 50px </li>
+                </ul>
+            </div>
+
+            <div class="inline-block beige-text">
+                <ul>
+                    <li>&lt;p class="m-1"&gt;Margin with 10px&lt;/p&gt;</li>
+                    <li>&lt;p class="m-2"&gt;Margin with 20px&lt;/p&gt;</li>
+                    <li>&lt;p class="m-3"&gt;Margin with 30px&lt;/p&gt;</li>
+                    <li>&lt;p class="m-4"&gt;Margin with 40px&lt;/p&gt;</li>
+                    <li>&lt;p class="m-5"&gt;Margin with 50px&lt;/p&gt;</li>
+                </ul>
+            </div>
+
+            <br>
+            <h2 class="mt-4 red-text">Padding</h2>
+            <p class="m-0">Example:</p>
+            <div class="inline-block mr-5 bold">
+                <ul>
+                    <li>Padding Left</li>
+                    <li>Padding Right</li>
+                    <li>Padding Top</li>
+                    <li>Padding Bottom</li>
+                    <li>Padding Top and Bottom</li>
+                    <li>Padding Left and Right</li>
+                </ul>
+            </div>
+
+            <div class="inline-block beige-text">
+                <ul>
+                    <li>&lt;p class="pl-1"&gt;Padding Left&lt;/p&gt;</li>
+                    <li>&lt;p class="pr-1"&gt;Padding Right&lt;/p&gt;</li>
+                    <li>&lt;p class="pt-1"&gt;Padding Top&lt;/p&gt;</li>
+                    <li>&lt;p class="pb-1"&gt;Padding Bottom&lt;/p&gt;</li>
+                    <li>&lt;p class="py-1"&gt;Padding Top and Bottom&lt;/p&gt;</li>
+                    <li>&lt;p class="px-1"&gt;Padding Left and Right&lt;/p&gt;</li>
+                </ul>
+            </div>
+
+
+            <h4 class="green-text underline">Padding Sizes</h4>
+
+            <p class="m-0">Example:</p>
+            <div class="inline-block mr-5 bold mr-5">
+                <ul>
+                    <li>Padding with 10px</li>
+                    <li>Padding with 20px</li>
+                    <li>Padding with 30px</li>
+                    <li>Padding with 40px</li>
+                    <li>Padding with 50px </li>
+                </ul>
+            </div>
+
+            <div class="inline-block beige-text">
+                <ul>
+                    <li>&lt;p class="p-1"&gt;Padding with 10px&lt;/p&gt;</li>
+                    <li>&lt;p class="p-2"&gt;Padding with 20px&lt;/p&gt;</li>
+                    <li>&lt;p class="p-3"&gt;Padding with 30px&lt;/p&gt;</li>
+                    <li>&lt;p class="p-4"&gt;Padding with 40px&lt;/p&gt;</li>
+                    <li>&lt;p class="p-5"&gt;Padding with 50px&lt;/p&gt;</li>
+                </ul>
+            </div>
+
+
+        </section>
+        <br>
+        <br>
+        <section>
+            <h3 class="red-text text-center">GRID SYSTEM</h3>
+
+            <div class="grid-row grid-col-4">
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+                <div class="grid-item">
+                    <img class="w-100" src="https://img.freepik.com/free-photo/blue-mountains-famous-tourism-scenery-lijiang_1417-1143.jpg?size=626&ext=jpg"
+                        alt="">
+                </div>
+
+
+            </div>
+
+        </section>
 
 </body>
 
