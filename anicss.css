@@ -1256,3 +1256,385 @@ on the contents names to find the styles you wish to alter
     }
 
 }
+
+
+/* ===================== */
+/* === Filter System === */
+/* ===================== */
+
+
+
+/* =========================================================== */
+/* ==============  Filter System    ================== */
+
+#filter-system {
+    display: block;
+    max-width: 1680px;
+    width: 100%;
+    text-align: center;
+}
+#filter-system input{
+display: none;
+}
+
+#filter-system #filter-labels{
+    margin: 30px;
+    
+}
+#filter-system #filter-labels label {
+    margin: 0px 30px;
+    font-size: 18px;
+}
+
+#filter-system .card-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#filter-system .card  {
+    margin: 10px;
+    transition: all ease-in 0.1s;
+    /* border: 1px black solid; */
+    
+}
+
+#filter-system .card .card-content {
+    
+}
+
+#filter-system .card .card-content .card-content-img {
+    width: 300px;
+}
+
+#filter-system .card .card-content .card-content-copy {
+    
+    color: black;
+}
+
+/* Each Button Should have 31 combinations. */
+/* =========================================================== */
+/* ==============  Filter1 FILTER BUTTON    ================== */
+
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter5,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3-filter4,
+input#filter1:checked~.card-list .card-filter2-filter3-filter5,
+input#filter1:checked~.card-list .card-filter2-filter3-filter6,
+input#filter1:checked~.card-list .card-filter2-filter4-filter5,
+input#filter1:checked~.card-list .card-filter2-filter4-filter6,
+input#filter1:checked~.card-list .card-filter2-filter5-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4-filter5,
+input#filter1:checked~.card-list .card-filter3-filter4-filter6,
+input#filter1:checked~.card-list .card-filter3-filter5-filter6,
+input#filter1:checked~.card-list .card-filter4-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2-filter3,
+input#filter1:checked~.card-list .card-filter2-filter4,
+input#filter1:checked~.card-list .card-filter2-filter5,
+input#filter1:checked~.card-list .card-filter2-filter6,
+input#filter1:checked~.card-list .card-filter3-filter4,
+input#filter1:checked~.card-list .card-filter3-filter5,
+input#filter1:checked~.card-list .card-filter3-filter6,
+input#filter1:checked~.card-list .card-filter4-filter5,
+input#filter1:checked~.card-list .card-filter4-filter6,
+input#filter1:checked~.card-list .card-filter5-filter6,
+input#filter1:checked~.card-list .card-filter2,
+input#filter1:checked~.card-list .card-filter3,
+input#filter1:checked~.card-list .card-filter4,
+input#filter1:checked~.card-list .card-filter5,
+input#filter1:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter2 FILTER BUTTON    ================== */
+
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter5,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3-filter4,
+input#filter2:checked~.card-list .card-filter1-filter3-filter5,
+input#filter2:checked~.card-list .card-filter1-filter3-filter6,
+input#filter2:checked~.card-list .card-filter1-filter4-filter5,
+input#filter2:checked~.card-list .card-filter1-filter4-filter6,
+input#filter2:checked~.card-list .card-filter1-filter5-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4-filter5,
+input#filter2:checked~.card-list .card-filter3-filter4-filter6,
+input#filter2:checked~.card-list .card-filter3-filter5-filter6,
+input#filter2:checked~.card-list .card-filter4-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1-filter3,
+input#filter2:checked~.card-list .card-filter1-filter4,
+input#filter2:checked~.card-list .card-filter1-filter5,
+input#filter2:checked~.card-list .card-filter1-filter6,
+input#filter2:checked~.card-list .card-filter3-filter4,
+input#filter2:checked~.card-list .card-filter3-filter5,
+input#filter2:checked~.card-list .card-filter3-filter6,
+input#filter2:checked~.card-list .card-filter4-filter5,
+input#filter2:checked~.card-list .card-filter4-filter6,
+input#filter2:checked~.card-list .card-filter5-filter6,
+input#filter2:checked~.card-list .card-filter1,
+input#filter2:checked~.card-list .card-filter3,
+input#filter2:checked~.card-list .card-filter4,
+input#filter2:checked~.card-list .card-filter5,
+input#filter2:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter3 FILTER BUTTON    ================== */
+
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter5,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2-filter4,
+input#filter3:checked~.card-list .card-filter1-filter2-filter5,
+input#filter3:checked~.card-list .card-filter1-filter2-filter6,
+input#filter3:checked~.card-list .card-filter1-filter4-filter5,
+input#filter3:checked~.card-list .card-filter1-filter4-filter6,
+input#filter3:checked~.card-list .card-filter1-filter5-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4-filter5,
+input#filter3:checked~.card-list .card-filter2-filter4-filter6,
+input#filter3:checked~.card-list .card-filter2-filter5-filter6,
+input#filter3:checked~.card-list .card-filter4-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1-filter2,
+input#filter3:checked~.card-list .card-filter1-filter4,
+input#filter3:checked~.card-list .card-filter1-filter5,
+input#filter3:checked~.card-list .card-filter1-filter6,
+input#filter3:checked~.card-list .card-filter2-filter4,
+input#filter3:checked~.card-list .card-filter2-filter5,
+input#filter3:checked~.card-list .card-filter2-filter6,
+input#filter3:checked~.card-list .card-filter4-filter5,
+input#filter3:checked~.card-list .card-filter4-filter6,
+input#filter3:checked~.card-list .card-filter5-filter6,
+input#filter3:checked~.card-list .card-filter1,
+input#filter3:checked~.card-list .card-filter2,
+input#filter3:checked~.card-list .card-filter4,
+input#filter3:checked~.card-list .card-filter5,
+input#filter3:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter4 FILTER BUTTON    ================== */
+
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter5,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2-filter3,
+input#filter4:checked~.card-list .card-filter1-filter2-filter5,
+input#filter4:checked~.card-list .card-filter1-filter2-filter6,
+input#filter4:checked~.card-list .card-filter1-filter3-filter5,
+input#filter4:checked~.card-list .card-filter1-filter3-filter6,
+input#filter4:checked~.card-list .card-filter1-filter5-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3-filter5,
+input#filter4:checked~.card-list .card-filter2-filter3-filter6,
+input#filter4:checked~.card-list .card-filter2-filter5-filter6,
+input#filter4:checked~.card-list .card-filter3-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1-filter2,
+input#filter4:checked~.card-list .card-filter1-filter3,
+input#filter4:checked~.card-list .card-filter1-filter5,
+input#filter4:checked~.card-list .card-filter1-filter6,
+input#filter4:checked~.card-list .card-filter2-filter3,
+input#filter4:checked~.card-list .card-filter2-filter5,
+input#filter4:checked~.card-list .card-filter2-filter6,
+input#filter4:checked~.card-list .card-filter3-filter5,
+input#filter4:checked~.card-list .card-filter3-filter6,
+input#filter4:checked~.card-list .card-filter5-filter6,
+input#filter4:checked~.card-list .card-filter1,
+input#filter4:checked~.card-list .card-filter2,
+input#filter4:checked~.card-list .card-filter3,
+input#filter4:checked~.card-list .card-filter5,
+input#filter4:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter5 FILTER BUTTON    ================== */
+
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter4,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2-filter3,
+input#filter5:checked~.card-list .card-filter1-filter2-filter4,
+input#filter5:checked~.card-list .card-filter1-filter2-filter6,
+input#filter5:checked~.card-list .card-filter1-filter3-filter4,
+input#filter5:checked~.card-list .card-filter1-filter3-filter6,
+input#filter5:checked~.card-list .card-filter1-filter4-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3-filter4,
+input#filter5:checked~.card-list .card-filter2-filter3-filter6,
+input#filter5:checked~.card-list .card-filter2-filter4-filter6,
+input#filter5:checked~.card-list .card-filter3-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1-filter2,
+input#filter5:checked~.card-list .card-filter1-filter3,
+input#filter5:checked~.card-list .card-filter1-filter4,
+input#filter5:checked~.card-list .card-filter1-filter6,
+input#filter5:checked~.card-list .card-filter2-filter3,
+input#filter5:checked~.card-list .card-filter2-filter4,
+input#filter5:checked~.card-list .card-filter2-filter6,
+input#filter5:checked~.card-list .card-filter3-filter4,
+input#filter5:checked~.card-list .card-filter3-filter6,
+input#filter5:checked~.card-list .card-filter4-filter6,
+input#filter5:checked~.card-list .card-filter1,
+input#filter5:checked~.card-list .card-filter2,
+input#filter5:checked~.card-list .card-filter3,
+input#filter5:checked~.card-list .card-filter4,
+input#filter5:checked~.card-list .card-filter6 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* =========================================================== */
+/* ==============  Filter6 FILTER BUTTON    ================== */
+
+input#filter6:checked~.card-list .card-filter1-filter2-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2-filter3-filter4,
+input#filter6:checked~.card-list .card-filter1-filter2-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2-filter3,
+input#filter6:checked~.card-list .card-filter1-filter2-filter4,
+input#filter6:checked~.card-list .card-filter1-filter2-filter5,
+input#filter6:checked~.card-list .card-filter1-filter3-filter4,
+input#filter6:checked~.card-list .card-filter1-filter3-filter5,
+input#filter6:checked~.card-list .card-filter1-filter4-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3-filter4,
+input#filter6:checked~.card-list .card-filter2-filter3-filter5,
+input#filter6:checked~.card-list .card-filter2-filter4-filter5,
+input#filter6:checked~.card-list .card-filter3-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1-filter2,
+input#filter6:checked~.card-list .card-filter1-filter3,
+input#filter6:checked~.card-list .card-filter1-filter4,
+input#filter6:checked~.card-list .card-filter1-filter5,
+input#filter6:checked~.card-list .card-filter2-filter3,
+input#filter6:checked~.card-list .card-filter2-filter4,
+input#filter6:checked~.card-list .card-filter2-filter5,
+input#filter6:checked~.card-list .card-filter3-filter4,
+input#filter6:checked~.card-list .card-filter3-filter5,
+input#filter6:checked~.card-list .card-filter4-filter5,
+input#filter6:checked~.card-list .card-filter1,
+input#filter6:checked~.card-list .card-filter2,
+input#filter6:checked~.card-list .card-filter3,
+input#filter6:checked~.card-list .card-filter4,
+input#filter6:checked~.card-list .card-filter5 {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    min-width: 0;
+}
+
+/* ====================   /Filter System  ========================= */
+
+/*  =========   ALL POSSIBLE COMBINATIONS OF CARDS  =========== */
+/*
+.filter1-filter2-filter3-filter4-filter5-filter6
+.card-filter2-filter3-filter4-filter5-filter6
+.card-filter1-filter3-filter4-filter5-filter6
+.card-filter1-filter2-filter4-filter5-filter6
+.card-filter1-filter2-filter3-filter5-filter6
+.card-filter1-filter2-filter3-filter4-filter6
+.card-filter1-filter2-filter3-filter4-filter5
+
+.card-filter1-filter2-filter3-filter4
+.card-filter1-filter2-filter3-filter5
+.card-filter1-filter2-filter3-filter6
+.card-filter1-filter2-filter4-filter5
+.card-filter1-filter2-filter4-filter6
+.card-filter1-filter2-filter5-filter6
+.card-filter1-filter3-filter4-filter5
+.card-filter1-filter3-filter4-filter6
+.card-filter1-filter3-filter5-filter6
+.card-filter1-filter4-filter5-filter6
+.card-filter2-filter3-filter4-filter5
+.card-filter2-filter3-filter4-filter6
+.card-filter2-filter3-filter5-filter6
+.card-filter2-filter4-filter5-filter6
+.card-filter3-filter4-filter5-filter6
+
+.card-filter1-filter2-filter3
+.card-filter1-filter2-filter4
+.card-filter1-filter2-filter5
+.card-filter1-filter2-filter6
+.card-filter1-filter3-filter4
+.card-filter1-filter3-filter5
+.card-filter1-filter3-filter6
+.card-filter1-filter4-filter5
+.card-filter1-filter4-filter6
+.card-filter1-filter5-filter6
+.card-filter2-filter3-filter4
+.card-filter2-filter3-filter5
+.card-filter2-filter3-filter6
+.card-filter2-filter4-filter5
+.card-filter2-filter4-filter6
+.card-filter2-filter5-filter6
+.card-filter3-filter4-filter5
+.card-filter3-filter4-filter6
+.card-filter3-filter5-filter6
+.card-filter4-filter5-filter6
+
+.card-filter1-filter2
+.card-filter1-filter3
+.card-filter1-filter4
+.card-filter1-filter5
+.card-filter1-filter6
+.card-filter2-filter3
+.card-filter2-filter4
+.card-filter2-filter5
+.card-filter2-filter6
+.card-filter3-filter4
+.card-filter3-filter5
+.card-filter3-filter6
+.card-filter4-filter5
+.card-filter4-filter6
+.card-filter5-filter6
+
+.card-filter1
+.card-filter2
+.card-filter3
+.card-filter4
+.card-filter5
+.card-filter6
+
+    */
