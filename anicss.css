@@ -16,6 +16,19 @@ html {
     margin: 30px 0px;
 }
 
+a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #557a95;
+    font-style: italic;
+}
+a:hover {
+    text-decoration: underline;
+    color: grey;
+    
+}
+
 /* ============================== */
 /* =======  CSS Library  ======== */
 /* ============================== */
@@ -1259,13 +1272,60 @@ on the contents names to find the styles you wish to alter
 
 
 /* ===================== */
-/* === Filter System === */
+/* === Drop Down Tab System === */
 /* ===================== */
 
 
+.dropdown {
+    position: relative;
+    margin: 0 0 5px;
+    width: 100%;
+    overflow: hidden;
+    
+  }
+  .dropdown input {
+    display: none;
+  }
+  .dropdown label {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    display: block;
+    padding: 10px;
+    background: #96272b;
+  }
+  .dropdown-box {
+    max-height: 0vh;
+    overflow: hidden;
+    background: #f0dddd;
+    transition: all ease-in-out 0.7s;
+    transform: rotateY(90deg);
 
-/* =========================================================== */
-/* ==============  Filter System    ================== */
+  }
+  .dropdown-box p {
+    margin: 10px;
+  }
+  .dropdown input:checked ~ .dropdown-box {
+    transform: rotateY(0deg);
+    max-height:100vh;
+  }
+  .dropdown label::after {
+    float: right;
+    transition: all ease-in-out 0.3s
+  }
+  .dropdown input[type=checkbox] + label::after {
+    content: "+";
+  }
+  .dropdown input[type=checkbox]:checked + label::after {
+    transform: rotate(1040deg);
+  }
+
+
+
+/* ===================== */
+/* === Filter System === */
+/* ===================== */
 
 #filter-system {
     display: block;
