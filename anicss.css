@@ -1309,6 +1309,7 @@ on the contents names to find the styles you wish to alter
   .dropdown input:checked ~ .dropdown-box {
     transform: rotateY(0deg);
     max-height:100vh;
+    overflow: auto;
   }
   .dropdown label::after {
     float: right;
@@ -1342,7 +1343,8 @@ display: none;
     
 }
 #filter-system #filter-labels label {
-    margin: 0px 30px;
+    padding: 20px 30px;
+    display: inline-block;
     font-size: 18px;
 }
 
@@ -1355,7 +1357,8 @@ display: none;
 
 #filter-system .card  {
     margin: 10px;
-    transition: all ease-in 0.1s;
+    transition: all ease-in 0.3s;
+    width: 300px;
     /* border: 1px black solid; */
     
 }
@@ -1365,7 +1368,7 @@ display: none;
 }
 
 #filter-system .card .card-content .card-content-img {
-    width: 300px;
+    width: 100%;
 }
 
 #filter-system .card .card-content .card-content-copy {
