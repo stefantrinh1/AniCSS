@@ -47,7 +47,7 @@ Basic knowledge of HTML would be useful here
 - Button Animations
 - Text Animations
 
-### Contact Details
+## Contact Details
 
 If you have any questions or would like to get in touch, please contact me using the details below.
 
